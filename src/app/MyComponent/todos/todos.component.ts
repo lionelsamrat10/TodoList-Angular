@@ -39,4 +39,9 @@ export class TodosComponent implements OnInit {
     // Remove the todo from the array Todos.. 
     this.todos.splice(this.todos.indexOf(todo), 1);
   }
+  // Adds the todo onto the array todos..
+  addTodo(todo: Todo) {
+    console.log(todo);
+    this.todos.push(todo);
+  }
 }
